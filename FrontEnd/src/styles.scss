@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~@angular/material/_theming.scss';
+@include mat-core();
+
+$default-theme: mat-dark-theme(mat-palette($mat-blue-grey, 900), mat-palette($mat-blue-grey, 200));
+@include angular-material-theme($default-theme);

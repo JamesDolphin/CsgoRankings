@@ -1,0 +1,41 @@
+@font-face {
+  font-family: csgo;
+  src: url(../../../assets/font/cs_regular.ttf) format("opentype");
+}
+
+.hard-right {
+  float: right;
+}
+
+
+.heading {
+  text-align: center;
+  font-family: csgo;
+  font-size: 35px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.header {
+  width: 100%;
+}
+
+.layout {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+
+//263238
+
+

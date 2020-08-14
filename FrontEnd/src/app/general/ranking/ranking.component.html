@@ -1,0 +1,6 @@
+<div class="container">
+  <div class="source-heading">{{ ranking.sourceName }}</div>
+  <div *ngFor="let team of this.ranking.teams">
+    <app-team [team]="team"></app-team>
+  </div>
+</div>

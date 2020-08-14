@@ -1,0 +1,21 @@
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.placement-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.team-item {
+  margin: 5px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.layout {
+  margin: 30px;
+}

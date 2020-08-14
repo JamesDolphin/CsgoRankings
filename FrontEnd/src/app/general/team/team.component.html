@@ -1,0 +1,18 @@
+<div class="team-container">
+  <div class="placement-container">
+    <div class="team-item">#{{ team.rank }}</div>
+
+    <div class="team-item">
+      <img src="{{ team.logoUrl }}" width="30" height="30" />
+    </div>
+
+    <div class="team-item">
+      {{ team.name }}
+    </div>
+  </div>
+  <div class="points-container">
+    <div class="team-item">
+      ({{team.points}})
+    </div>
+  </div>
+</div>

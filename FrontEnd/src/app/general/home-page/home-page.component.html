@@ -1,0 +1,9 @@
+<div *ngIf="!loading">
+  <div class="container">
+    <div class="rank-page" *ngFor='let ranking of rankings'>
+      <app-ranking [ranking]="ranking"></app-ranking>
+    </div>
+  </div>
+
+</div>
+
