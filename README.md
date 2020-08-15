@@ -1,2 +1,2 @@
-# CsgoStats
-Csgo Stats
+# CsgoRankings
+Csgo Rankings
