@@ -1,4 +1,4 @@
-import { TeamRanking } from "./teamRanking";
+import { TeamRanking } from './teamRanking';
 
 export interface Ranking {
   sourceUrl: string;

@@ -4,16 +4,13 @@ import { Ranking } from 'src/app/models/ranking';
 @Component({
   selector: 'app-ranking',
   templateUrl: './ranking.component.html',
-  styleUrls: ['./ranking.component.scss']
+  styleUrls: ['./ranking.component.scss'],
 })
 export class RankingComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-
-  @Input() ranking: Ranking
+  @Input() ranking: Ranking;
   ngOnInit() {
     console.log(this.ranking);
   }
-
 }

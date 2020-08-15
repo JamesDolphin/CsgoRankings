@@ -7,33 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './general/home-page/home-page.component';
 import { BaseLayoutComponent } from './general/base-layout/base-layout.component';
 
-import { MatIconModule } from "@angular/material/icon";
-import { MatToolbarModule } from "@angular/material/toolbar"
-import { MatButtonModule } from "@angular/material/button"
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
-import { RankingComponent } from './general/ranking/ranking.component'
-import { TeamComponent } from './general/team/team.component'
-
+import { RankingComponent } from './general/ranking/ranking.component';
+import { TeamComponent } from './general/team/team.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    BaseLayoutComponent,
-    RankingComponent,
-    TeamComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatButtonModule,
-    HttpClientModule
-
-  ],
+  declarations: [AppComponent, HomePageComponent, BaseLayoutComponent, RankingComponent, TeamComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule, MatToolbarModule, MatButtonModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

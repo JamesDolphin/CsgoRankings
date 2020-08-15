@@ -1,28 +1,27 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Ranking } from '../models/ranking'
+import { Ranking } from '../models/ranking';
 
 export interface Cat {
-  name: string
+  name: string;
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RankingService {
-
   constructor(private http: HttpClient) {}
 
   getHltvStats(): Observable<Ranking> {
-    return this.http.get<Ranking>('http://localhost:8000/api/hltvStats')
+    return this.http.get<Ranking>('http://localhost:8000/api/hltvStats');
   }
 
   getEslStats(): Observable<Ranking> {
-    return this.http.get<Ranking>('http://localhost:8000/api/eslStats')
+    return this.http.get<Ranking>('http://localhost:8000/api/eslStats');
   }
 
   getCsppaStats(): Observable<Ranking> {
-    return this.http.get<Ranking>('http://localhost:8000/api/csppaStats')
+    return this.http.get<Ranking>('http://localhost:8000/api/csppaStats');
   }
 }

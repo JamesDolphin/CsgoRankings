@@ -3,14 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './general/home-page/home-page.component';
 import { BaseLayoutComponent } from './general/base-layout/base-layout.component';
 
-const routes: Routes = [
-  { path: "", component: BaseLayoutComponent, children: [{ path: "", component: HomePageComponent}] },
-];
+const routes: Routes = [{ path: '', component: BaseLayoutComponent, children: [{ path: '', component: HomePageComponent }] }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
-
-
+export class AppRoutingModule {}

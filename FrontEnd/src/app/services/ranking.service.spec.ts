@@ -6,7 +6,7 @@ import { RankingService } from './ranking.service';
 describe('Service: Ranking', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [RankingService]
+      providers: [RankingService],
     });
   });
 
