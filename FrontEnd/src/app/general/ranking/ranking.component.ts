@@ -11,6 +11,5 @@ export class RankingComponent implements OnInit {
 
   @Input() ranking: Ranking;
   ngOnInit() {
-    console.log(this.ranking);
   }
 }

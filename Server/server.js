@@ -3,6 +3,10 @@ const cors = require("cors");
 const puppeteer = require("puppeteer");
 const cheerio = require("cheerio");
 const axios = require("axios");
+
+const http = require("http");
+
+const path = require("path");
 const { allowedNodeEnvironmentFlags } = require("process");
 
 class Ranking {
@@ -24,11 +28,20 @@ class TeamRanking {
 }
 
 var corsOptions = {
-  origin: "http://localhost:4200",
+  origin: "http://localhost:3001",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
 const app = express();
+const port = 3001;
+
+app.use(express.static(__dirname + '/dist/csgo-stats'));
+
+app.get('/*', (req, res) => res.sendFile(path.join(__dirname)));
+
+const server = http.createServer(app);
+
+server.listen(port, console.log("Running..."));
 
 app.use(cors(corsOptions));
 

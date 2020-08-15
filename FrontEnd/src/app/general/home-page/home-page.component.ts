@@ -18,7 +18,6 @@ export class HomePageComponent implements OnInit {
     this.rankingService.getHltvStats().subscribe((res: Ranking) => {
       this.rankings.push(res);
 
-      console.log(this.rankings);
 
       this.rankingService.getEslStats().subscribe((res: Ranking) => {
         this.rankings.push(res);
